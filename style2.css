@@ -56,8 +56,8 @@ img {
 }
 
 .edt-seance-titre {
-    font-weight: 600;
-    font-size: 2.3em;
+    font-weight: 700;
+    font-size: 2.5em;
     margin-top: 1rem;
     margin-bottom: 0;
     margin-left: 1.5rem;
@@ -66,8 +66,6 @@ img {
 .edt-seance-ssinfos {
     font-weight: 400;
     font-size: 1.3em;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
     margin-left: 1.5rem;
     padding-right: 3rem;
 }
