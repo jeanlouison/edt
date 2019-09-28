@@ -7,6 +7,8 @@ var heureDebList = [];
 var xDown = null;                                                        
 var yDown = null;
 
+let swipeDir = '';
+
 window.onload = function () {
     document.addEventListener('touchstart', handleTouchStart, false);        
     document.addEventListener('touchmove', handleTouchMove, false);
@@ -167,7 +169,7 @@ function updateEDT (date) {
 
                 //création des divs d'emploi du temps
                 UIedtMain.innerHTML += 
-                `<div class="animated edt-seance fadeInRight ${matiere}">
+                `<div class="animated edt-seance ${swipeDir} ${matiere}">
                     <img src="img/${matiere}.png" alt="${matiere}">
                     <span class="seance-infos">
                         <p class="edt-seance-titre">
@@ -213,12 +215,14 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
             /* left swipe */ 
             nextDate = initdate.addDays(1);
+            swipeDir = 'fadeInRight';
             clearEDT();
             checkInLocalStorage(nextDate);
             
         } else {
             /* right swipe */
             nextDate = initdate.addDays(-1);
+            swipeDir = 'fadeInLeft';
             clearEDT();
             checkInLocalStorage(nextDate);
         }                       
