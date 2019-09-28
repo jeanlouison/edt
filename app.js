@@ -8,7 +8,6 @@ var xDown = null;
 var yDown = null;
 
 window.onload = function () {
-    document.querySelector('#no-js').style.display = 'none';
     document.addEventListener('touchstart', handleTouchStart, false);        
     document.addEventListener('touchmove', handleTouchMove, false);
     checkInLocalStorage(initdate);

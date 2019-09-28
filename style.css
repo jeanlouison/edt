@@ -105,6 +105,11 @@ img {
     border-right: solid #efebe9;
     border-width: 0 .3em;
 }
+.W {
+    border-left: solid #9c8ddf;
+    border-right: solid #9c8ddf;
+    border-width: 0 .3em;
+}
 
 .loader {
     margin-top: 35vh;
